@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 22, 2020 at 03:47 PM
+-- Generation Time: Dec 22, 2020 at 06:01 PM
 -- Server version: 10.4.14-MariaDB
 -- PHP Version: 7.4.9
 
@@ -83,7 +83,13 @@ CREATE TABLE `tambahitem` (
 --
 
 INSERT INTO `tambahitem` (`id_barang`, `nama_barang`, `jenis_barang`, `harga_barang`, `stock`, `image_barang_1`, `image_barang_2`, `image_barang_3`, `desc_barang`, `kata_kunci`) VALUES
+('A023', 'headset KW', 'acs', 25000, 44, 'best_2.png', '', '', 'sekali pake mledak', 'headset'),
+('A030', 'Silicon Case i Phone 7 Re', 'acs', 27000, 39, 'CSAPSE.jpg', '', '', 'gampang sobek ga worth', 'case i phone'),
 ('H001', 'Samsung A51 Crush', 'hp', 4700000, 25, 'AP11.jpg', 'gadget1.jpg', 'gadget2.jpg', 'mantap banget. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus commodi quasi earum eos facere inventore tenetur amet ab, cumque culpa vitae sed maxime dolores quas ullam accusamus nostrum saepe rerum.', ''),
+('H003', 'Apple i Phone 11 128 GB', 'hp', 16599000, 22, 'apple.png', '', '', 'barangnya mantap betul tapi boong', 'i phone'),
+('H004', 'Asus ROG 2 128 GB', 'hp', 7249999, 22, 'asus.png', '', '', 'barangnya mantap betul tapi boong', 'rog'),
+('H005', 'Xiaomi Note 8 128 Gb', 'hp', 2800000, 22, 'xiaomi.png', '', '', 'barangnya mantap juga tapi ini beneran gak deng gatau', 'xiaomi'),
+('H009', 'Samsung S20 Ultra 128 Gb', 'hp', 15000000, 33, 'S20.jpg', '', '', 'wawawawa ak suka skali', 'samsung '),
 ('LT001', 'Vivobook A412FL', 'lpt', 14000000, 10, 'laptop1.jpg', '', '', 'Processor : Core i7 8th gen\r\nRam : 8 Gb 2 slot\r\nGraphic card : NVIDIA Geforce MX250\r\n', '');
 
 -- --------------------------------------------------------
@@ -108,6 +114,7 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`username`, `password`, `nama_lengkap`, `email`, `HP`, `tanggal`, `gender`, `pict`) VALUES
+('excaandita', 'neymar11', 'Exca Muchlis Andita', 'bisutarjo.bi@gmail.com', '081227834282', '2000-05-31', 'Pria', ''),
 ('Fandy Irianto', 'sekepalniat', 'Fandy Ahmad Irianto', 'fandy@gmail.com', NULL, NULL, NULL, 'user/assets/images/profile-default.png'),
 ('Pioboy', '212', 'Ferdian Proambodho', 'mail@gmail.com', '082334952928', '2001-02-06', 'Pria', 'user/images-profile/whiteScreen.png');
 
