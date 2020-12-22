@@ -52,7 +52,7 @@ if($hasilqueryinput==1){
 }else{
     echo "<center><h1> Registrasi gagal</h1> </center></br>";
 }
-echo "<h3><center><a href='index.php?target=login'>Sign in</a></center></h3></p>";
+echo "<h3><center><a href='login.php?target=login'>Sign in</a></center></h3></p>";
 require("footer.php"); 
 require("js.php"); 
 ?>
