@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.1
+-- version 5.0.2
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 21, 2020 at 05:20 PM
--- Server version: 10.4.11-MariaDB
--- PHP Version: 7.4.2
+-- Generation Time: Dec 22, 2020 at 03:47 PM
+-- Server version: 10.4.14-MariaDB
+-- PHP Version: 7.4.9
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -100,7 +99,7 @@ CREATE TABLE `user` (
   `email` varchar(50) NOT NULL,
   `HP` varchar(13) DEFAULT NULL,
   `tanggal` date DEFAULT NULL,
-  `gender` enum('Pria','Wanita','','') DEFAULT NULL,
+  `gender` enum('Pria','Wanita') DEFAULT NULL,
   `pict` text NOT NULL DEFAULT 'user/assets/images/profile-default.png'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
