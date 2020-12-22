@@ -1,10 +1,14 @@
+<link rel="stylesheet" type="text/css" href="styles/shop_styles.css">
+<link rel="stylesheet" type="text/css" href="styles/shop_responsive.css">
 <?php
 require('database.php');
-$queryselect = "select * from tambahitem";                            
-$hasilselect = mysqli_query($koneksi1,$queryselect);
+extract($_POST);
+$cari = $_POST['cari'];
+$data = "select * from tambahitem where nama_barang like '%".$cari."%'";                  
+$hasilselect = mysqli_query($koneksi1,$data);
 $jumlah = mysqli_num_rows($hasilselect);
-if ($jumlah){
-while ($row = mysqli_fetch_array($hasilselect)){
+if ($jumlah!=0){  
+    while ($row = mysqli_fetch_array($hasilselect)){
     //<!-- Product Item -->
     echo   "<card class='product_item is_new col-3'>
                 <div class='product_border'></div>
@@ -21,5 +25,15 @@ while ($row = mysqli_fetch_array($hasilselect)){
             </card>";
             
     }
-}
+} else { echo " 
+                <div class = 'container'>
+                </br>
+                </br>
+                <center>
+                    <h3> 'Data Tidak Ditemukan' </h3>
+                    
+                    <p style='color: blue;'>silahkan masukan kata kunci lain</p>
+                </center>
+                </div>";
+                }
 ?>

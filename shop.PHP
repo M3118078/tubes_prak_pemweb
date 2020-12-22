@@ -75,13 +75,19 @@
 					<div class="shop_content">
 						<div class="shop_bar clearfix">
 							<div class="shop_product_count"><span>
-                                <?php require('database.php');
-                                    $queryselect = "select * from tambahitem";
-                                    $hasilselect = mysqli_query($koneksi1,$queryselect);
-                                    $jumlah = mysqli_num_rows($hasilselect); 
-                                    echo $jumlah;
-                                ?>
-                             </span> products found</div>
+								<?php 
+								$submit = $_POST['submit'];
+								require('database.php');
+								if(isset($submit)){
+									$cari = $_POST['cari'];
+									$data = "select * from tambahitem where nama_barang like '%".$cari."%'";
+									$hasilselect = mysqli_query($koneksi1,$data);
+									$jumlah = mysqli_num_rows($hasilselect);
+									echo $jumlah;
+								}
+
+								?>
+                             </span> products found "<?php echo $cari ?>"</div>
 							<div class="shop_sorting">
 								<span>Sort by:</span>
 								<ul>
