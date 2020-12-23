@@ -40,8 +40,8 @@ $jumlah=mysqli_num_rows($hasilselect);
            "<td>".$row['password']."</td>",
            "<td>".$row['nama_lengkap']."</td>",
            "<td>".$row['email']."</td>",
-           "<td><a href='edititem.php?target=".$row['']."'> <b> edit </b>  </a> </br> 
-            <a href='hapustambahitem.php?target=".$row['']."'> <b> hapus </b>  </a></td>",
+           "<td>
+            <a href='hapususer.php?target=".$row['username']."'> <b> hapus </b>  </a></td>",
             "</tr>",
             "</tbody>";
         }
