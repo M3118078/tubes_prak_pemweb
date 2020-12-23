@@ -71,15 +71,7 @@
 								<div class="header_search_form_container">
 									<form action="index.php?target=result" method="post" class="header_search_form clearfix">
 										<input type="search" required="required" name="cari" class="header_search_input" placeholder="Search for products...">
-										<div class="custom_dropdown">
-											<div class="custom_dropdown_list">
-												<span class="custom_dropdown_placeholder clc">All Categories</span>
-												<i class="fas fa-chevron-down"></i>
-												<ul class="custom_list clc">
-													<li><a class="clc" href="#">All Categories</a></li>											
-												</ul>
-											</div>
-										</div>
+										
 										<button type="submit" class="header_search_button trans_300" value="Submit" name='submit'><img src="images/search.png" alt=""></button>
 									</form>
 								</div>

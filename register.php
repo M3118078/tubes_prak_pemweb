@@ -53,9 +53,9 @@
 				</div>
 				<div class="form-group">
 				<label for="gender">Gender</label>
-				<select class="form-control" name='gender' id="gender">
-					<option value ="Pria">Pria</option>";
-					<option value ="Wanita">Wanita</option>";
+				<select class="form-control" name='gender'>
+					<option id="gender" value ="Pria">Pria</option>";
+					<option id="gener" value ="Wanita">Wanita</option>";
 				</select>
 				</div>
 			
