@@ -8,11 +8,11 @@
 		//Slider Item
 		    echo "<div class='featured_slider_item'>
 					<div class='border_active'></div>
-					<div class='product_item is_new d-flex flex-column align-items-center justify-content-center text-center'>
+					<div class='product_item is_new d-flex flex-column align-items-center justify-content-center text-center'><a href='getInfoProduct.php?product=".$row['id_barang']."'>
 						<div class='product_image d-flex flex-column align-items-center justify-content-center'><img src='images/".$row['image_barang_1']."' alt=''></div>
 							<div class='product_content'>
 								<div class='product_price'>Rp.".number_format($row['harga_barang'])."</div>
-								<div class='product_name'><div><a href='product.html'>".$row['nama_barang']."</a></div></div>
+								<div class='product_name'><div><a href='getInfoProduct.php?product=".$row['id_barang']."'>".$row['nama_barang']."</a></div></div>
 								<div class='product_extras'>
 									<div class='product_color'>
 										<input type='radio' checked name='product_color' style='background:#b19c83'>
@@ -25,7 +25,7 @@
 									echo"
 									<button class='product_cart_button active'><a href='../tubes_prak_pemweb/user/add_to_cart.php?target=".$row['id_barang']."'>Add to Cart</a></button>
 								
-								</div>
+								</div></a>
 							</div>
 							<ul class='product_marks'>
 								<li class='product_mark product_discount'></li>
