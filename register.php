@@ -15,43 +15,60 @@
 		<link rel="stylesheet" type="text/css" href="plugins/slick-1.8.0/slick.css">
 		<link rel="stylesheet" type="text/css" href="styles/main_styles.css">
 		<link rel="stylesheet" type="text/css" href="styles/responsive.css">
+		<link rel="stylesheet" type="text/css" href="styles/shop_styles.css">
+    	<link rel="stylesheet" type="text/css" href="styles/shop_responsive.css">
 	</head>
 	<body>
+		<div class="container">
 		<center>
 		<h1 class="mt-5">Register Form</h1>
 		<p class="lead">Silahkan Daftarkan Identitas Anda</p>
 
-		<form method="post" action="terima_register.php">
-			<p>Username</p>
-			<input type="text" name="username" placeholder="Masukkan Username">
-
-			<p>Password</p>
-			<input type="password" name="password" placeholder="Masukkan Password">
-
-			<p>Nama Lengkap</p>
-			<input type="text" name="nama_lengkap" placeholder="Masukkan Nama Lengkap">
+		<div class="row">
+			<div class="col pedding-50"></div>
+			<form method="post" action="terima_register.php" class="col-4">
+				<div class="form-group">
+					<label for="username">Username</label>
+					<input type="text" class="form-control" name="username" id="username" placeholder="Masukkan Username">
+				</div>
+				<div class="form-group">
+					<label for="password">Password</label>
+					<input type="password" class="form-control" name="password" id="password" placeholder="Masukkan Password">
+				</div>
+				<div class="form-group">
+					<label for="nama_lengkap">Nama Lengkap</label>
+					<input type="text" class="form-control" name="nama_lengkap" id="nama_lengkap" placeholder="Masukkan Nama Lengkap">	
+				</div>
+				<div class="form-group">
+					<label for="e_mail">Email</label>
+					<input type="text" class="form-control" name="e_mail" id="e_mail" placeholder="Masukkan E-mail">
+				</div>
+				<div class="form-group">
+					<label for="hp">Nomor HP</label>
+					<input type="text" class="form-control" name="hp" id="hp" placeholder="Masukkan No HP">
+				</div>			
+				<div class="form-group">
+					<label for="date"> Tanggal Lahir</label>	
+					<input type="date" class="form-control" name="tanggal_lahir" id="tanggal_lahir">
+				</div>
+				<div class="form-group">
+				<label for="gender">Gender</label>
+				<select class="form-control" name='gender' id="gender">
+					<option value ="Pria">Pria</option>";
+					<option value ="Wanita">Wanita</option>";
+				</select>
+				</div>
 			
-			<p>E-mail</p>
-			<input type="text" name="e_mail" placeholder="Masukkan E-mail">
-			
-			<p>HP</p>
-			<input type="text" name="hp" placeholder="Masukkan No HP">
-			
-			<p>Tanggal Lahir</p>	
-		    <input type="date" name="tanggal_lahir">
-
-			<p>Gender</p>
-			<select name='gender'>
-				<option value ="Pria">Pria</option>";
-				<option value ="Wanita">Wanita</option>";
-				<option value =""></option>";
-				<option value =""></option>";
-	        </select>
-			</br>
-			</br>
-			<button type="submit" name="register">Register</button>
-			<a href='index.php?target=login'>Sign in</a>"
-		</form>  
-</center>
+				</br>
+				</br>
+				<button type="submit" class="btn btn-primary" name="register">Register</button>
+				<a href='index.php?target=login'>Sign in</a>"
+			</form>
+			<div class="col pedding-50"></div>
+		
+		</div>
+		  
+		</center>
+		</div>
 	</body>
 </html>
