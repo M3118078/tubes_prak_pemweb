@@ -2,8 +2,7 @@
 <link rel="stylesheet" type="text/css" href="styles/shop_responsive.css">
 <?php
 require('database.php');
-extract($_POST);
-$cari = $_POST['cari'];
+$cari = $_SESSION['cari'];
 $data = "select * from tambahitem where nama_barang like '%".$cari."%'";                  
 $hasilselect = mysqli_query($koneksi1,$data);
 $jumlah = mysqli_num_rows($hasilselect);

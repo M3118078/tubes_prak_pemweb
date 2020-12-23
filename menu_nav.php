@@ -29,14 +29,14 @@
 							<div class="main_nav_menu ml-auto">
 								<ul class="standard_dropdown main_nav_dropdown">
 									<li><a href="index.php?target=home">Home<i class="fas fa-chevron-down"></i></a></li>
-									<li><a href="index.php?target=result">Search Result<i class="fas fa-chevron-down"></i></a></li>
-
 									<?php
+										if(isset($_SESSION['cari'])){
+											echo "<li><a href='index.php?target=result'>Search Result<i class='fas fa-chevron-down'></i></a></li>";
+										}
 										if(isset($_SESSION['id_barang'])){
 											echo "<li><a href='index.php?target=products'>Products<i class='fas fa-chevron-down'></i></a></li>";
 										}
 									?>
-									
 									<li><a href="index.php?target=blog">Blog<i class="fas fa-chevron-down"></i></a></li>
 									<li><a href="index.php?target=contact">Contact<i class="fas fa-chevron-down"></i></a></li>
 								</ul>

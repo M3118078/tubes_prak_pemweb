@@ -76,10 +76,9 @@
 						<div class="shop_bar clearfix">
 							<div class="shop_product_count"><span>
 								<?php 
-								$submit = $_POST['submit'];
 								require('database.php');
-								if(isset($submit)){
-									$cari = $_POST['cari'];
+								if(isset($_SESSION['cari'])){
+									$cari = $_SESSION['cari'];
 									$data = "select * from tambahitem where nama_barang like '%".$cari."%'";
 									$hasilselect = mysqli_query($koneksi1,$data);
 									$jumlah = mysqli_num_rows($hasilselect);
