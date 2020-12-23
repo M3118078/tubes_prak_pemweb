@@ -32,7 +32,6 @@ $e_mail=$_POST['e_mail'];
 $hp=$_POST['hp'];
 $tanggal_lahir=$_POST['tanggal_lahir'];
 $gender=$_POST['gender'];
-$pict=$_POST['pict'];
 /*
 echo "$username</br>";
 echo "$nama_lengkap</br>";
@@ -44,8 +43,8 @@ echo "$tanggal_lahir</br>";
 echo "$pict</br>";
 */
 require('database.php');
-$queryinput = "INSERT INTO user (username, password, nama_lengkap, email, HP, tanggal, gender, pict) 
-VALUES ('$username', '$password', '$nama_lengkap', '$e_mail', '$hp', '$tanggal_lahir', '$gender', '$pict' )";
+$queryinput = "INSERT INTO user (username, password, nama_lengkap, email, HP, tanggal, gender) 
+VALUES ('$username', '$password', '$nama_lengkap', '$e_mail', '$hp', '$tanggal_lahir', '$gender')";
 $hasilqueryinput = mysqli_query($koneksi1,$queryinput);
 if($hasilqueryinput==1){
     echo "<center><h1> Registrasi Berhasil </h1></center></br>";

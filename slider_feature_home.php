@@ -19,7 +19,12 @@
 										<input type='radio' name='product_color' style='background:#000000'>
 										<input type='radio' name='product_color' style='background:#999999'>
 									</div>
-									<button class='product_cart_button active'>Add to Cart</button>
+									";
+									//risky tambah link add to cart.php
+									//<button class='product_cart_button active'>Add to Cart</button>
+									echo"
+									<button class='product_cart_button active'><a href='../tubes_prak_pemweb/user/add_to_cart.php?target=".$row['id_barang']."'>Add to Cart</a></button>
+								
 								</div>
 							</div>
 							<ul class='product_marks'>

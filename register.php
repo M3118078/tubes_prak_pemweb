@@ -40,17 +40,15 @@
 			<p>Tanggal Lahir</p>	
 		    <input type="date" name="tanggal_lahir">
 
-			Gender
+			<p>Gender</p>
 			<select name='gender'>
 				<option value ="Pria">Pria</option>";
 				<option value ="Wanita">Wanita</option>";
 				<option value =""></option>";
 				<option value =""></option>";
 	        </select>
-	
-			<p>Pilih file foto:</p>
-			<input type="file" name="pict">
-
+			</br>
+			</br>
 			<button type="submit" name="register">Register</button>
 			<a href='index.php?target=login'>Sign in</a>"
 		</form>  
