@@ -31,7 +31,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top ml-5 mr-5 pl-5" id="mainNav">
       <div class="container">
 
-        <a class="navbar-brand" href='index.php?target=home'> <b>FVNTECH </b> || <b>SELAMAT DATANG ADMIN</b></a>
+        <a class="navbar-brand" href='index.php?target=home'> <b>TUTUPLAPAK </b> || <b>SELAMAT DATANG ADMIN</b></a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
           data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>

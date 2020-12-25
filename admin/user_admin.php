@@ -8,12 +8,12 @@
 $koneksi1 = mysqli_connect('localhost','root','','dbfvntech');
 $queryselect ="select * from user";
 $hasilselect = mysqli_query($koneksi1,$queryselect);
-$jumlah=mysqli_num_rows($hasilselect);
+$jumlah_user=mysqli_num_rows($hasilselect);
 
 ?>
 <h3><i class="far fa-user mr-3"></i>Daftar User</h3><hr>
 
-<h5 class="mt-4 mb-3"><b>Jumlah Item Barang : <?php echo "$jumlah"?></b></h5>
+<h5 class="mt-4 mb-3"><b>Jumlah User : <?php echo "$jumlah_user"?></b></h5>
 
 <table class="table">
 
@@ -32,7 +32,7 @@ $jumlah=mysqli_num_rows($hasilselect);
    // require('database.php'); kalau pakai require ga bisa konek(error) database masih dicari alasan kok ga bisa konek
     
    
-    if($jumlah){
+    if($jumlah_user){
         while ($row =mysqli_fetch_array($hasilselect)){
           echo"<tbody>",
           "<tr>",
