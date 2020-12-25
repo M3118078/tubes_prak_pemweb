@@ -29,8 +29,8 @@
 		if($_GET['target']=='contact'){
 			require('contact.php');}	
 		if($_GET['target']=='cart'){
-			header('location:user/cart.php');}
-		if($_GET['target']=='blog'){
+	 		require('location:cart.php');}
+	 	if($_GET['target']=='blog'){
 			require('blog.php');}
 		if($_GET['target']=='blog_single'){
 			require('blog_single.php');}			
