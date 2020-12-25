@@ -62,7 +62,7 @@
 					<!-- Logo -->
 					<div class="col-lg-2 col-sm-3 col-3 order-1">
 						<div class="logo_container">
-							<div class="logo"><a href="#">tutuplapak</a></div>
+							<div class="logo"><a href="index.php?target=home">tutuplapak</a></div>
 						</div>
 					</div>
 
