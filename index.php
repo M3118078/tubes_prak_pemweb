@@ -21,7 +21,7 @@
 	  <?php 
 	  session_start();
 	  require("header.php");
-	 //require("menu_nav.php");
+	  require("menu_nav.php");
 	 $row['id_barang']=0;
       if(isset($_GET['target'])){
 		if($_GET['target']=='home'){
