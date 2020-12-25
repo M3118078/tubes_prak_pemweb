@@ -61,7 +61,7 @@
 
 								<div class="product_price" style="margin-top: -5px;"><?php echo "Rp".number_format($row['harga_barang']);?></div>
 								<div class="button_container">
-									<button type="button" class="button cart_button">Add to Cart</button>
+									<button type="button" class="button cart_button"><a href="index.php?target=kuitansi">Add to Cart</a></button>
 									<div class="product_fav"><i class="fas fa-heart"></i></div>
 								</div>
 								
