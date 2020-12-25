@@ -87,11 +87,11 @@
                 class="fas fa-shopping-basket mr-3"></i>Produk</a>
             <hr class="bg-secondary">
           </li>
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a class="nav-link  text-white" href="index.php?target=terjual_admin"><i
                 class="fas fa-shopping-cart mr-3"></i>Terjual</a>
             <hr class="bg-secondary">
-          </li>
+          </li> -->
         </ul>
       </div>
 
