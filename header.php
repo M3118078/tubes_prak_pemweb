@@ -1,4 +1,6 @@
 
+
+
 <body>
 
 
@@ -97,7 +99,7 @@
 										<div class="cart_count"><span>10</span></div>
 									</div>
 									<div class="cart_content">
-										<div class="cart_text"><a href="index.php?target=cart">Cart</a></div>
+										<div class="cart_text"><a href="index.php?target=kuitansi">Cart</a></div>
 										<div class="cart_price">$85</div>
 									</div>
 								</div>
