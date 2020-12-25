@@ -1,7 +1,7 @@
 <!-- Reviews Slider Item -->
 	<?php
 	require('database.php');
-	/*$queryselect = "select * from review_user";
+	$queryselect = "select * from review_user";
 	$hasilselect = mysqli_query($koneksi1,$queryselect);
 	$jumlah = mysqli_num_rows($hasilselect);
 	if ($jumlah){
@@ -18,4 +18,4 @@
 				</div>
 			";}
 		}
-*/	?>					
+	?>					
