@@ -1,3 +1,5 @@
+<link rel="stylesheet" type="text/css" href="styles/product_styles.css">
+<link rel="stylesheet" type="text/css" href="styles/product_responsive.css">
 <?php
 session_start();
 
