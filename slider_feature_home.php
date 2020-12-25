@@ -3,7 +3,7 @@
 	$queryselect = "select * from tambahitem";
 	$hasilselect = mysqli_query($koneksi1,$queryselect);
 	$jumlah = mysqli_num_rows($hasilselect);
-	if ($jumlah){
+	if ($jumlah>0){
 		while ($row = mysqli_fetch_array($hasilselect)){
 		//Slider Item
 		    echo "<div class='featured_slider_item'>
@@ -22,8 +22,10 @@
 									";
 									//risky tambah link add to cart.php
 									//<button class='product_cart_button active'>Add to Cart</button>
+									//<button class='product_cart_button active'><a href='../tubes_prak_pemweb/user/add_to_cart.php?target=".$row['id_barang']."'>Add to Cart</a></button>
+
 									echo"
-									<button class='product_cart_button active'><a href='../tubes_prak_pemweb/user/add_to_cart.php?target=".$row['id_barang']."'>Add to Cart</a></button>
+									<button class='product_cart_button active'><a href='index.php?target=add_to_cart&target1=".$row['id_barang']."'>Add to Cart</a></button>
 								
 								</div></a>
 							</div>

@@ -1,7 +1,7 @@
 <?php
 session_start();
 require('../database.php');
-//require('../header.php');
+
 
 ?>
 
@@ -25,7 +25,7 @@ require('../database.php');
             $nomor=1;
             ?>
             <?php 
-                foreach ($_SESSION["cart"]as $id_barang=>$jumlah):
+                foreach ($_SESSION["cart"]as $id_barang => $jumlah):
             ?>
             
             <?php 
