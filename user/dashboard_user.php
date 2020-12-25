@@ -29,7 +29,7 @@ if (mysqli_num_rows($result) > 0) {
             <div class="col-3 border" style="padding-top: 20px;">
                 <img class="w-100" src="assets/images/blank-logo.png">
                 <div style="padding-top: 20px;">
-                    <a class="row" href="userDashboard.php?target=detail">
+                    <a class="row" href="user/getUserDetail.php">
                         <h2 style="padding-left: 20px;"><i class="fa fa-user-o"></i></h2>
                         <h4 style="padding-top:8px;padding-left:20px;">   <?php echo $row['username'];?></h4>
                     </a> 
@@ -47,9 +47,9 @@ if (mysqli_num_rows($result) > 0) {
         
         <div class="row col-9" style="padding-left:100px;">
             <?php
-                 if(isset($_GET['target']))
+                 if(isset($_SESSION['userGet']))
                  {
-                   if($_GET['target']=='cart') {require('userCart.php');} else {require('userDetail.php');}
+                   if($_SESSION['userGet']=='userCart') {require('userCart.php');} else {require('userDetail.php');}
                  } else {require('userDetail.php');}
             ?>
 
