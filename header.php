@@ -94,6 +94,10 @@
 						<div class="wishlist_cart d-flex flex-row align-items-center justify-content-end">
 							<div class="cart">
 								<div class="cart_container d-flex flex-row align-items-center justify-content-end">
+									<div class="cart_icon">
+										<img src="images/cart.png" alt="">
+										
+									</div>
 									<div class="cart_content">
 										<div class="cart_text"><a href="index.php?target=kuitansi">Cart</a></div>
 										
