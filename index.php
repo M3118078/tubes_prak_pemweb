@@ -21,15 +21,16 @@
 	  <?php 
 	  session_start();
 	  require("header.php");
-	  require("menu_nav.php");
+	 require("menu_nav.php");
+	 $row['id_barang']=0;
       if(isset($_GET['target'])){
 		if($_GET['target']=='home'){
 			require('home.php');}
 		if($_GET['target']=='contact'){
 			require('contact.php');}	
-		if($_GET['target']=='cart'){
-			require('cart.php');}
-		if($_GET['target']=='blog'){
+		// if($_GET['target']=='cart'){
+	 	// 	require('location:cart.php');}
+	 	if($_GET['target']=='blog'){
 			require('blog.php');}
 		if($_GET['target']=='blog_single'){
 			require('blog_single.php');}			
@@ -43,6 +44,14 @@
 				require('register.php');}
 		if($_GET['target']=='dashboard_user'){
 			require('user/dashboard_user.php');
+		}
+
+		if($_GET['target']=='add_to_cart'){
+			$row['id_barang']=$_GET['target1'];
+			require('user/add_to_cart.php');
+		}
+		if($_GET['target']=='kuitansi'){
+			require('user/kuitansi.php');
 		}
 		}else{
 		  require('home.php');

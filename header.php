@@ -1,4 +1,6 @@
 
+
+
 <body>
 
 
@@ -60,7 +62,7 @@
 					<!-- Logo -->
 					<div class="col-lg-2 col-sm-3 col-3 order-1">
 						<div class="logo_container">
-							<div class="logo"><a href="#">tutuplapak</a></div>
+							<div class="logo"><a href="index.php?target=home">tutuplapak</a></div>
 						</div>
 					</div>
 
@@ -94,11 +96,11 @@
 								<div class="cart_container d-flex flex-row align-items-center justify-content-end">
 									<div class="cart_icon">
 										<img src="images/cart.png" alt="">
-										<div class="cart_count"><span>10</span></div>
+										
 									</div>
 									<div class="cart_content">
-										<div class="cart_text"><a href="index.php?target=cart">Cart</a></div>
-										<div class="cart_price">$85</div>
+										<div class="cart_text"><a href="index.php?target=kuitansi">Cart</a></div>
+										
 									</div>
 								</div>
 							</div>

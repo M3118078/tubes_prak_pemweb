@@ -1,5 +1,6 @@
 <?php
 	require('database.php');
+
 	$id_barang=$_SESSION['id_barang'];
 	$queryselect="SELECT * FROM tambahitem WHERE id_barang='$id_barang'";
 	$result=mysqli_query($koneksi1,$queryselect);
@@ -61,7 +62,7 @@
 
 								<div class="product_price" style="margin-top: -5px;"><?php echo "Rp".number_format($row['harga_barang']);?></div>
 								<div class="button_container">
-									<button type="button" class="button cart_button">Add to Cart</button>
+									<button type="button" class="button cart_button"><?php echo"<a href='index.php?target=add_to_cart&target1=".$row['id_barang']."'>Add To Cart</a>";?></button>
 									<div class="product_fav"><i class="fas fa-heart"></i></div>
 								</div>
 								
