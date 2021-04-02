@@ -8,8 +8,7 @@
 <h3><i class="fas fa-user mr-3"></i><b>Admin</b> </h3>
 <hr class="bg-dark ">
 <div class="row ">
-    <div class="co-md-4 ml-4 mr-5 mt-3 ">
-        
+    <div class="col-md-4 ml-4 mr-5 mt-3 "> 
         <div class="card" style="width: 18rem;">
       
             <!-- <i class="fas fa-user mr-3 mt-2 mb-3  fa-4x"> </i>-->
@@ -23,5 +22,8 @@
         </div>
 
     </div>
-    <div class="co-md-4">biodata</div>
+    <div class="col-md-4">
+        
+    </div>
+    
 </div>

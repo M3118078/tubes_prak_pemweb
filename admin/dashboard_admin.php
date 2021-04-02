@@ -9,6 +9,13 @@
     $hasilselect = mysqli_query($koneksi1,$queryselect);
     $jumlah=mysqli_num_rows($hasilselect);
 ?>
+<?php 
+$koneksi1 = mysqli_connect('localhost','root','','dbfvntech');
+$queryselect ="select * from user";
+$hasilselect = mysqli_query($koneksi1,$queryselect);
+$jumlah_user=mysqli_num_rows($hasilselect);
+
+?>
 <style>
   .display-4 {
     font-weight: bold;
@@ -31,7 +38,7 @@
       <i class="far fa-user mr-3 icon-white"></i></div>
     <div class="card-body">
       <h5 class="card-title text-white"><b>Data User</b></h5>
-      <div class="display-4 text-white ml-3">6</div>
+      <div class="display-4 text-white ml-3"><?php echo "$jumlah_user"?></div>
       <a href="">
         <p class="card-text text-white">Lihat Lanjut ... <i class="fas fa-angle-double-right ml-2"></i></p>
       </a>

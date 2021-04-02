@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 22, 2020 at 06:01 PM
+-- Generation Time: Dec 25, 2020 at 10:40 AM
 -- Server version: 10.4.14-MariaDB
 -- PHP Version: 7.4.9
 
@@ -58,6 +58,32 @@ INSERT INTO `jenis_barang` (`id_jenis`, `jenis_barang`) VALUES
 ('acs', 'Accessories'),
 ('hp', 'Handphone'),
 ('lpt', 'Laptop');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `review_user`
+--
+
+CREATE TABLE `review_user` (
+  `nama_review` varchar(200) NOT NULL,
+  `isi_review` text NOT NULL,
+  `id_review` int(3) NOT NULL,
+  `image_review` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `review_user`
+--
+
+INSERT INTO `review_user` (`nama_review`, `isi_review`, `id_review`, `image_review`) VALUES
+('buaya muara', 'aku takut kamu dirumah sendirian, aku kerumah kamu sekarang ya', 1, 'accessories1.jpg'),
+('buaya betina keras', 'ahh itu cuman temen kelas aku doang kok sayang tadi aku minta tolong doang', 2, 'accessories2.jpg'),
+('Burung Perkutut', 'cit cittt cuitt cuitt cuittt uhwuwu icikwirrr asleblebeb.', 3, 'accessories6.jpg'),
+('buaya cupu', 'aku pengen ketemu kamu tapi aku malu ga bisa bahagiain kamu', 5, 'AP11.jpg'),
+('buaya betina umumnya', 'gatau kenapa aku bisa sesayangan ini sama kamu', 7, 'asus.png'),
+('Exca Aja', 'Barang barang yg dijual disini harganya ga masuk akallll, murah bangett dompet ibuku sampe tipiss lagi xixixi', 8, 'apple.png'),
+('Fandy Metal', 'password hp saya lupa, hpnya saya buang mbak mbaknya saya beli .', 9, 'xiaomi.png');
 
 -- --------------------------------------------------------
 
@@ -127,6 +153,12 @@ INSERT INTO `user` (`username`, `password`, `nama_lengkap`, `email`, `HP`, `tang
 --
 ALTER TABLE `jenis_barang`
   ADD PRIMARY KEY (`id_jenis`);
+
+--
+-- Indexes for table `review_user`
+--
+ALTER TABLE `review_user`
+  ADD PRIMARY KEY (`id_review`);
 
 --
 -- Indexes for table `tambahitem`
